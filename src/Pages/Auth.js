@@ -65,7 +65,7 @@ const GoogleAuth = (props) => {
        >
         <img src={Loader} />
        </div>)  : ( <div>
-            <h2  className="animate__animated animate__pulse heading1">Insta Poll  - Create a Realtime Poll Instantly ⚡ </h2>
+            <h2  className="animate__animated animate__pulse heading1">Yourwotmatters  - Create a Realtime Poll Instantly ⚡ </h2>
             <div className="flex_home">
               <div style={{flexGrow:"1"}} className="min_wide">
                 <h1 className="google_head">Login to get Started!</h1>

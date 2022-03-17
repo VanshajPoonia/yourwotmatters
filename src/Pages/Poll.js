@@ -25,7 +25,7 @@ const Poll = (props) => {
     const [pollData, setPollData] = useState([]);
     const [index, setIndex] = useState(-1);
     const handleURL = ()=>{
-        navigator.clipboard.writeText("https://insta-poll-72ce3.web.app/" + poll.id);
+        navigator.clipboard.writeText("https://yourwotmatters.web.app/" + poll.id);
         toast.success("URL copied to clipboard")
     }
     const showModal = () => {
@@ -233,15 +233,15 @@ style={{
       <div className="share_icons animate__animated animate__fadeIn">
           <h3>Share this Poll <ShareAltOutlined /></h3>
         <TwitterShareButton
-            url={`https://insta-poll-72ce3.web.app/${poll.id}`}
-            title={`Vote to this poll titled "${poll.title}"  generated using Insta Poll\n`}
+            url={`https://yourwotmatters.web.app/${poll.id}`}
+            title={`Vote to this poll titled "${poll.title}"  generated using Yourwotmatters\n`}
             className="share_icon"
           >
             <TwitterIcon size={32} round />
           </TwitterShareButton>
           <WhatsappShareButton
-             url={`https://insta-poll-72ce3.web.app/${poll.id}`}
-             title={`Vote to this poll titled "${poll.title}"  generated using Insta Poll`}
+             url={`https://yourwotmatters.web.app/${poll.id}`}
+             title={`Vote to this poll titled "${poll.title}"  generated using Yourwotmatters`}
             separator=":: "
             className="share_icon"
   
@@ -249,15 +249,15 @@ style={{
             <WhatsappIcon size={32} round  />
           </WhatsappShareButton>
           <FacebookShareButton
-            url={`https://insta-poll-72ce3.web.app/${poll.id}`}
-            title={`Vote to this poll titled "${poll.title}"  generated using Insta Poll`}
+            url={`https://yourwotmatters.web.app/${poll.id}`}
+            title={`Vote to this poll titled "${poll.title}"  generated using Yourwotmatters`}
             className="share_icon"
        
           >
             <FacebookIcon size={32} round />
           </FacebookShareButton>
           <br/>
-          <Input value={`https://insta-poll-72ce3.web.app/${poll.id}`} style={{width:"15rem"}} disabled/>
+          <Input value={`https://yourwotmatters.web.app/${poll.id}`} style={{width:"15rem"}} disabled/>
           <Button type="primary" onClick={handleURL}>Copy URL</Button>
           <Button type="primary" onClick={showModal} style={{margin:"0.5rem"}}>
           Share QR Code
@@ -268,7 +268,7 @@ style={{
           onCancel = {showModal}
                 style={{textAlign:"center"}}
         >
-            <QRCode value={`https://insta-poll-72ce3.web.app/${poll.id}`} style={{height:"12rem", width:"12rem"}}  />
+            <QRCode value={`https://yourwotmatters.web.app/${poll.id}`} style={{height:"12rem", width:"12rem"}}  />
              </Modal>
           </div>
         </div>
